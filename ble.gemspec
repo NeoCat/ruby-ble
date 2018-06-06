@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.version       = BLE::VERSION
   s.authors       = [ "Stephane D'Alu" ]
   s.email         = [ "stephane.dalu@gmail.com" ]
-  s.homepage      = "http://github.com/sdalu/ruby-ble"
+  s.homepage      = "http://gitlab.com/sdalu/ruby-ble"
   s.summary       = "Bluetooth Low Energy (BLE) API"
   s.description   = "Allow access to Bluetooth Low Energy device from ruby"
 
