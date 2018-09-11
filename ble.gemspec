@@ -19,8 +19,6 @@ Gem::Specification.new do |s|
   s.add_development_dependency "redcarpet"
   s.add_development_dependency "github-markup"
 
-  s.has_rdoc      = 'yard'
-
   s.license       = 'MIT'
   
 
