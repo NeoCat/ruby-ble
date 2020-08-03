@@ -53,13 +53,13 @@ module BLE
     end
 
     def read(raw: false)
-      val= @dbus_obj[I_GATT_CHARACTERISTIC].ReadValue().first
+      val= @dbus_obj[I_GATT_CHARACTERISTIC].ReadValue([]).first
       val= _deserialize_value(val, raw: raw)
     end
 
     def async_read(raw: false)
       return Concurrent::Promise.execute do
-        @dbus_obj[I_GATT_CHARACTERISTIC].ReadValue() do |result|
+        @dbus_obj[I_GATT_CHARACTERISTIC].ReadValue([]) do |result|
           val= result.first
           val= _deserialize_value(val, raw: raw)
         end
